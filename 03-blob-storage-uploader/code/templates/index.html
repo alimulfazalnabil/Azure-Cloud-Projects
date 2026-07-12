@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Azure Blob Uploader</h1>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+      <input type="file" name="file" />
+      <button type="submit">Upload</button>
+    </form>
+    <h2>Existing files</h2>
+    <ul>
+      {% for blob in blobs %}
+      <li>{{ blob }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

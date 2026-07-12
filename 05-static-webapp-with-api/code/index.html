@@ -1,0 +1,9 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Azure Static Web App</h1>
+    <button onclick="fetch('/api/hello').then(r => r.json()).then(d => alert(d.message))">
+      Call API
+    </button>
+  </body>
+</html>
